@@ -1,7 +1,7 @@
 # Code Test
 
 ## Overview
-The exercise was to build a simple website with 5 pages and a navigation bar, that is fully responsive, cross-browser compatible and matches the supplied Invision designs. The total time spent on the exercise is 2.5 hours. The body of each page is made of one or several components including:
+The exercise was to build a simple website with 5 pages and a navigation bar, that is fully responsive, cross-browser compatible and matches the supplied Invision designs. The total time spent on the exercise was 2.5 hours. The body of each page is made of one or several components including:
 - Text + image
 - Form (on submit nothing should happen)
 - Accordion (only one section can be open at a time)
@@ -49,5 +49,6 @@ The challenge was to see how far I could get through the pages in the given time
 - finish styling the accordion and add touch event listeners for both the navigation and accordion to ensure it works on touch-screen devices (30 minutes)
 - build the form and style them in the _gen-forms.scss file so they are reusable (~30 - 40 minutes)
 - tidy up styles by paying close attention to the design in Invision (30 minutes)
+- break down the accordion and use a loop to display the content, this will minimise the HTML syntax and make it more readable.
 - use BrowserStack to test the site on the devices within scope
 - to make the website more interactive, I could add AOS scroll and Splitting.js plugins to animate images and text on scroll
