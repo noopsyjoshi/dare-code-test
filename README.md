@@ -17,7 +17,7 @@ The exercise was to build a simple website with 5 pages and a navigation bar, th
 - Git (MacOS)
 
 ## How to use
-To run the project, please clone the repo and run the following commands
+To run the project, please navigate to the sub folder 'dare-code-test', clone the repo and run the following commands
 
 
 ```
@@ -33,7 +33,7 @@ I decided to use Vue CLI for the exercise as it provides the ability to quickly 
 
 My approach was to create the HTML first, add styling and any required functionality in a corresponding JS file within the utils folder. The JS file was imported into main.js and the function initiated on Vue's mounted hook.
 
-Before starting the project, I made sure I was using the latest npm packages.
+Before starting the project, I checked I was using the latest npm packages.
 
 1. I checked out to a separate branch to complete the exericse on. In any given project, I'd usually name the branch based on the description in the Jira ticket, for instance I'd create a separate branch to build the footer. Given the time restrictions, I worked on one branch to save time.
 2. I created the different pages in the 'Views' folder, the Vue Router in the 'index.js' file and added links to the Navigation component.
