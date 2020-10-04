@@ -35,7 +35,7 @@ My approach was to create the HTML first, add styling and any required functiona
 
 Before starting the project, I checked I was using the latest npm packages.
 
-1. I checked out to a separate branch to complete the exericse on. In any given project, I'd usually name the branch based on the description in the Jira ticket, for instance I'd create a separate branch to build the footer. Given the time restrictions, I worked on one branch to save time.
+1. I checked out to a separate branch to complete the exericse on. In any given project, I'd usually name the branch based on the description in the Jira ticket, for instance I'd create a separate branch to build the navigation. Given the time restrictions, I worked on one branch to save time.
 2. I created the different pages in the 'Views' folder, the Vue Router in the 'index.js' file and added links to the Navigation component.
 3. Downloaded Bootstrap through npm and set up a folder structure for the styles. I used two main folders to hold the scss files, a folder for component based styles, and the other for global ones.
 4. I created the hero component first and imported it into each view as per the design.
