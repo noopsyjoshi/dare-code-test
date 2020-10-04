@@ -43,7 +43,7 @@ Before starting the project, I checked I was using the latest npm packages.
 6. The navigation came next, and took the most time because of the functionality and responsiveness.
 7. Finally, I started working on the accordion for the 'Blusher' page but didn't finish it as I went over the given time.
 
-I made sure to push my code periodically after a task was complete, typically this is when a component was done.
+I made sure to push my code periodically after a component was built.
 
 ## Challenges and improvements
 The challenge was to see how far I could get through the pages in the given time. I used Bootstrap and reusable mixins to save time on the layout and images. Next steps:
