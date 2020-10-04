@@ -1,0 +1,8 @@
+@mixin flex-pos($align-items: center, $justify-content: center) {
+  align-items: $align-items;
+  display: flex;
+  justify-content: $justify-content;
+}
+
+// Usage example
+// @include flex-pos(center, space-between)
