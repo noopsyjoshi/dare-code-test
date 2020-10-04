@@ -11,7 +11,8 @@ The exercise was to build a simple website with 5 pages and a navigation bar, th
 - NPM package manager
 - Javascript
 - HTML
-- SCSS
+- SCSS (BEM format)
+- Bootstrap
 - Visual Studio Code (software of choice)
 - Git (MacOS)
 
