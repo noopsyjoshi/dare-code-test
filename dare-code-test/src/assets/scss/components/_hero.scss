@@ -1,0 +1,56 @@
+.hero {
+  @include flex-pos;
+  flex-direction: column;
+  overflow: hidden;
+  height: 50vh;
+  position: relative;
+
+  @include media-breakpoint-up(lg) {
+    height: 85vh;
+  }
+
+  &__title-container {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  &__title {
+    position: relative;
+    color: $c-white;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    font-weight: bold;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 5rem;
+      line-height: 5.8rem;
+    }
+  }
+
+  &__figure {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba($c-black, 0.2);
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__image {
+    @include object-fit;
+    width: 100%;
+    height: 100%;
+  }
+}
