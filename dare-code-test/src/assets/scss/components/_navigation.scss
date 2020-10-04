@@ -1,0 +1,115 @@
+.navigation {
+  position: fixed;
+  width: 100vw;
+  z-index: z("navigation");
+  padding: 10px;
+  height: 64px;
+  top: 0;
+  left: 0;
+
+  @include media-breakpoint-up(lg) {
+    height: 70px;
+    background-color: rgba($c-black, 0.3);
+    padding: 0;
+  }
+
+  &__toggle-btn {
+    position: relative; // add relative pos to make z-index work
+    @include flex-pos;
+    z-index: z("navigation__toggle-btn");
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid $c-white;
+    height: 44px;
+    width: 86px;
+    background-color: rgba($c-black, 0.2);
+
+    span {
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+      color: $c-white;
+    }
+
+    &--open {
+      display: flex;
+
+      .open & {
+        display: none;
+      }
+    }
+
+    &--close {
+      display: none;
+
+      .open & {
+        display: flex;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    display: none;
+    
+    &.active {
+      @include flex-pos;
+      height: 100vh;
+      background: $c-grey;
+      color: $c-white;
+      top: 0;
+      position: absolute;
+      left: 0;
+      width: 100vw;
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include flex-pos;
+      height: inherit;
+      background-color: transparent;
+    }
+  }
+
+  &__list {
+    @include flex-pos;
+    flex-direction: column;
+    margin: 0;
+
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+    }
+
+    li {
+      list-style: none;
+      margin: 20px 0;
+
+      @include media-breakpoint-up(lg) {
+        margin: 0 20px;
+      }
+    }
+
+    a {
+      color: $c-white;
+      font-size: 1.6rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 3rem;
+      letter-spacing: 0.07rem;
+      color: $c-white;
+      display: block;
+
+      &:hover {
+        color: $c-white;
+        text-decoration: none;
+      }
+
+      &.router-link-active {
+        border-bottom: 1px solid $c-grey-light;
+      }
+    }
+  }
+}
