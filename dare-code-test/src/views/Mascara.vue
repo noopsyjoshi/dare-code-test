@@ -1,7 +1,7 @@
 <template>
   <section class="mascara">
     <Hero image="mascara.jpg" title="Mascara" alt="Image of mascara makeup" />
-    <ImageCopy
+    <RightImageCopy
       image="model.jpg"
       body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vestibulum lacinia massa, a venenatis justo aliquet et. Curabitur vehicula iaculis lacus, ut hendrerit tortor posuere vitae. Duis tempus pellentesque efficitur. Sed eu euismod sapien. Nam ultrices, ipsum id rutrum posuere, risus lacus commodo lectus, quis eleifend lorem justo in risus. Sed et mi eu purus fringilla interdum. Donec et lacus nec nisi ullamcorper suscipit. Vivamus maximus viverra ligula nec fringilla. Sed nec turpis sed enim cursus luctus. Curabitur egestas nunc eu ante accumsan finibus. Cras non auctor lacus. Ut sit amet quam lacus. Ut tempor interdum enim, quis efficitur nibh bibendum vel."
       body2="Sed non lobortis massa. Vivamus hendrerit dui ut velit pharetra, in aliquet ligula lobortis. Sed maximus augue at mi accumsan, sed tempor neque luctus. In eleifend eros vel massa interdum, feugiat congue lectus lacinia. Nunc ut felis lobortis, malesuada velit facilisis, aliquet massa. Aenean sit amet lacus id tellus ultricies feugiat. Morbi sodales urna nisi, ac eleifend leo aliquam in. Duis sit amet tempus mauris. Etiam laoreet volutpat tellus porta consectetur."
@@ -14,13 +14,13 @@
 <script>
 // @ is an alias to /src
 import Hero from "@/components/Hero.vue";
-import ImageCopy from "@/components/ImageCopy.vue";
+import RightImageCopy from "@/components/RightImageCopy.vue";
 
 export default {
   name: "Home",
   components: {
     Hero,
-    ImageCopy
+    RightImageCopy
   }
 };
 </script>

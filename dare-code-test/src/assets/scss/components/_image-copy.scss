@@ -30,6 +30,10 @@
 
     &--spacer {
       margin-bottom: 50px;
+
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 0;
+      }
     }
   }
 
